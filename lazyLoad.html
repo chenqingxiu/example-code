@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>懒加载原理</title>
+</head>
+<body>
+
+  <script>
+    var imgs = document.getElementsByTagName("img");
+    function lazyload(){
+      var scrollTop = window.pageXOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      var viewportSize = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+      for(var i=0,len=imgs.length;i<len;i++){
+        var x = scrollTop + viewportSize - imgs[i].offsetTop;
+        if(x>0){
+          imgs[i].src = imgs[i].getAttribute("loadpic");
+        }
+      }
+    }
+setInterval(lazyload,1000);
+  </script>
+</body>
+</html>
