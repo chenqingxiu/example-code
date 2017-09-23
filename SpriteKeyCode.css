@@ -1,0 +1,13 @@
+.ps_demo_wrap .weibo_icon,
+.ps_demo_wrap .qq_icon,
+.ps_demo_wrap .douban_icon,
+.ps_demo_wrap .renren_icon{
+  width:54px;
+  height:54px;
+  background:url("../images/CssGaga.png");
+}
+
+.ps_demo_wrap .weibo_icon{ background-position: -168px 0px; }
+.ps_demo_wrap .qq_icon{ background-position: -56px 0px; }
+.ps_demo_wrap .douban_icon{ background-position: 0px 0px; }
+.ps_demo_wrap .renren_icon{ background-position: -112px 0px; }
