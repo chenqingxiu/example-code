@@ -18,6 +18,7 @@ window.onload = function ()
   {
     aInput[i].onkeyup = function ()
     {
+      //若为非数字则替换为空格
       this.value = this.value.replace(/[^\d]/,"")
     }
   }
