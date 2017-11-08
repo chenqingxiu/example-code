@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>alert弹出框样式</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style>
+  /*alert弹出框样式*/
+#alertbox
+{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 2rem;
+
+    position: absolute;
+    z-index: 999;
+    top: 42%;
+    left: 20%;
+
+    width: 60%;
+    height: 4rem;
+
+    text-align: center;
+    word-wrap: break-word;
+
+    border-radius: .3rem;
+    background-color: rgb(248, 248, 248);
+}
+
+#alertbutton
+{
+    font-weight: normal;
+    line-height: 1.5rem;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: 99%;
+    height: 1.5rem;
+
+    text-align: center;
+
+    color: #61a7ea;
+    border: 1px solid rgb(204, 204, 204);
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+}
+
+#backg
+{
+    position: absolute;
+    top: 0;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: .3;
+    background: #000;
+}
+
+</style>
+</head>
+<body>
+  <div>alert弹出层style及JS</div>
+  <script>
+    //alert弹出层
+    window.alert = function(name){
+    //创建一个大盒子
+      var box = document.createElement("div");
+      var back = document.createElement("div");
+      //创建一个关闭按钮
+      back.id = "backg";
+      document.body.appendChild(back);
+      var button = document.createElement("div");
+      //定义一个对象保存样式
+      box.id="alertbox";
+      //把创建的元素添加到body中
+      document.body.appendChild(box);
+      //把alert传入的内容添加到box中
+      if(arguments[0]){
+          box.innerHTML = arguments[0];
+      }
+      button.innerHTML = "确定";
+      //定义按钮样式
+      button.id="alertbutton";
+      //把按钮添加到box中
+      box.appendChild(button);
+      //给按钮添加单击事件
+      button.addEventListener("click",function(){
+          document.body.removeChild(box);
+          document.body.removeChild(back);//每次点击需要移除子元素，不然呵呵哒
+      })
+    };
+  </script>
+</body>
+</html>

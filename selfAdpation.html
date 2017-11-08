@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport"  initial-scale="1.0,user-scalable=no,maximum-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta name="format-detection" content="telephone=no">
+<title>selfAdaption</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<style>
+  /*reset css, from YUI Library*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td
+{
+    margin: 0;
+    padding: 0;
+}
+table
+{
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+fieldset,
+img
+{
+    border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var
+{
+    font-weight: normal;
+    font-style: normal;
+}
+ol,
+ul
+{
+    list-style: none;
+}
+caption,
+th
+{
+    text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-size: 100%;
+    font-weight: normal;
+}
+q:before,
+q:after
+{
+    content: ”;
+}
+abbr,
+acronym
+{
+    border: 0;
+}
+
+/*以下开始自己的样式*/
+html
+{
+    font-size: 40px;
+}
+
+body
+{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: .6rem;
+
+    position: relative;
+
+    width: 100%;
+    height: 100vh;
+
+    background: url(../img/back.png) no-repeat;
+    background-size: cover;
+}
+
+
+
+/*媒体查询，匹配分辨率*/
+@media only screen and (max-width: 376px)
+{
+    html
+    {
+        font-size: 16px;
+    }
+}
+@media only screen and (min-width: 377px) and (max-width: 450px)
+{
+    html
+    {
+        font-size: 24px;
+    }
+}
+@media only screen and (min-width: 451px) and (max-width: 525px)
+{
+    html
+    {
+        font-size: 28px;
+    }
+}
+@media only screen and (min-width: 526px) and (max-width: 600px)
+{
+    html
+    {
+        font-size: 32px;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 675px)
+{
+    html
+    {
+        font-size: 36px;
+    }
+}
+
+/*查询屏幕宽高比调整页面*/
+@media only screen and (min-aspect-ratio: 11/16) and (max-aspect-ratio: 1/1)
+{
+    .login-title
+    {
+        padding: 10vh 0 1vh;
+
+        background-size: rem;
+    }
+    .login-wrap
+    {
+        margin: 1rem auto 0;
+    }
+}
+@media only screen and (min-aspect-ratio: 16/15)
+{
+    html
+    {
+        font-size: 16px;
+    }
+    .login-title
+    {
+        padding: 10vh 0 1vh;
+
+        background-size: rem;
+    }
+    .login-wrap
+    {
+        margin: 1rem auto 0;
+    }
+}
+</style>
+<body>
+    <div style="font-size: 1rem">移动端自适应基础代码</div>
+</body>
+</html>
