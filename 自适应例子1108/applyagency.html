@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport"  initial-scale="1.0,user-scalable=no,maximum-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta name="format-detection" content="telephone=no">
+<title>申请代理</title>
+<meta name="description" content="apply-agency">
+<meta name="keywords" content="apply-agency">
+<link href="css/apply-agency.css" rel="stylesheet">
+</head>
+<body>
+  <!-- 密码输入框和提交按钮 -->
+  <form id="loginForm" class="apply-wrap" action=" " method="post">
+
+    <div class="apply-message-wrap">
+      申请成为代理（请填写真实资料，我们将认真审核）
+    </div>
+
+    <div class="apply-input-wrap">
+      <div class="apply-input">
+        <span>姓名</span>
+        <input id="applyUserName" id="apply-input-first" type="text" name="Password" placeholder="请输入您的姓名">
+      </div>
+      <div class="apply-input">
+        <span>身份证</span>
+        <input id="applyIdNum" id="apply-input-second" type="text" name="Password" placeholder="请输入您的身份证号码">
+      </div>
+      <div class="apply-input">
+        <span>手机号</span>
+        <input id="applyPhone" type="text" name="Password" placeholder="请输入您的手机号">
+      </div>
+    </div>
+
+    <div class="apply-message-wrap">
+      申明：
+      <span>本人保证以上信息真实有效，如有虚假，愿承担一切责任，包括放弃所有代理佣金
+      </span>
+    </div>
+
+    <!-- 确认按钮 -->
+    <label class="apply-btn" for="applyBtn">
+      <span class="apply-btn-text">确认</span>
+      <input id="applyBtn" type="button" value="" onClick='validateForm()'>
+    </label>
+
+  </form>
+  <script src="js/apply-agency.js"></script>
+</body>
+</html>
