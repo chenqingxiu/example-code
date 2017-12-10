@@ -1,3 +1,3 @@
 function world(){
-  return;
+  return 1;
 }
